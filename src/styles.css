@@ -4,10 +4,15 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 a{
   text-decoration: none;
 }
 li{
   list-style: none;
+}
+body{
+  background-color:#ffebcd;
 }

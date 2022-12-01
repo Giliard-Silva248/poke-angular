@@ -11,25 +11,30 @@
   flex-direction: column;
   justify-content: space-around;
   height: 60px;
+  margin: 25px 5px;
 }
 input{
  border: 1px solid rebeccapurple;
  border-radius: 5px;
  text-align: center;
+
+ text-transform: lowercase;
 }
 
 .card-container{
-  background-color:goldenrod;
+  background-color:#446E56;
   padding: 15px;
   margin-bottom: 15px;
   border-radius: 15px;
+  color: #f0f8ff;
+  text-transform: uppercase;
 }
 h3{
   text-align: center;
 }
 .card-body{
-  background-color: chocolate;
-  margin: 10px;
+  background-color: #73BA92;
+  margin: 20px;
   border-radius: 20%;
 }
 img{
@@ -41,14 +46,16 @@ img{
 
 }
 .card-stats-type{
-  background-color: #f0f0f0;
-  color: #000000;
+  background-color: #73BA92;
+  text-transform: uppercase;
+  color: #f0f8ff;
   font-weight: bolder;
   padding: 4px 7px;
   margin: 15px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 .if{
-  margin: 10px;
+  margin: 10px 0;
   color: grey;
+  text-indent: 5px;
 }

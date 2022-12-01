@@ -29,6 +29,7 @@ export class InfoPokemonComponent implements OnInit {
     this.getPokemon('bulbasaur')
   }
 
+  
   getPokemon(searchName:string){
 
 

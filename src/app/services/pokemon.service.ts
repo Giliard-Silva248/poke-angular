@@ -1,4 +1,4 @@
-import { Injectable, Input} from '@angular/core';
+import { Injectable} from '@angular/core';
 import { HttpClient  } from "@angular/common/http";
 import { Observable } from 'rxjs';
 
@@ -19,14 +19,11 @@ export class PokemonService {
     this.baseURL = environment.pokeApi
   }
 
-
-
   async carregarPokemons() {
     const requisicao = await this.httpClient
-      .get<any>('https://pokeapi.co/api/v2/pokemon?limit=200')
+      .get<any>(`https://pokeapi.co/api/v2/pokemon?limit=200`)
       .toPromise();
 
-      //console.log(requisicao);
 
     this.pokemons = requisicao.results;
   }

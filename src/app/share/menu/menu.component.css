@@ -1,21 +1,38 @@
 menu{
-  background-color: black;
-  color: aliceblue;
+
   display: flex;
   justify-content:space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
+
 h1{
   font-size: 2rem;
+  margin: 5px;
+  color: #0A7036;
+  font-style: italic;
 }
 ul{
-
   display: flex;
 }
 
 li{
   margin: 0 5px;
 }
+a:hover{
+  background-color: #446E56;
+  color: #f0f8ff;
+
+}
 a{
-  color: aqua;
+  padding: 10px;
+  color: #0A7036;
+}
+
+
+
+@media(max-width: 300px){
+  menu{
+    justify-content: center;
+  }
 }
