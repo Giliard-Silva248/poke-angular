@@ -19,11 +19,11 @@ export class PokemonService {
     this.baseURL = environment.pokeApi
   }
 
-  
+
 
   async carregarPokemons() {
     const requisicao = await this.httpClient
-      .get<any>('https://pokeapi.co/api/v2/pokemon?limit=5')
+      .get<any>('https://pokeapi.co/api/v2/pokemon?limit=200')
       .toPromise();
 
       //console.log(requisicao);

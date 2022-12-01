@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InfoPokemonComponent } from './pages/info-pokemon/info-pokemon.component';
-import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
-import { InfPagTestComponent } from "./pages/inf-pag-test/inf-pag-test.component";
+import { PokemonListComponent } from './pages/pokemon-list/pokemon-list.component';
+
 
 const routes: Routes = [
   {
@@ -12,7 +12,7 @@ const routes: Routes = [
   },
   {
     path:'InfoPokemon',
-    component: InfPagTestComponent,
+    component: InfoPokemonComponent,
   },
 
 ];

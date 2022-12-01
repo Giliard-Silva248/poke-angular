@@ -1,0 +1,21 @@
+menu{
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+h1{
+  font-size: 2rem;
+}
+ul{
+
+  display: flex;
+}
+
+li{
+  margin: 0 5px;
+}
+a{
+  color: aqua;
+}

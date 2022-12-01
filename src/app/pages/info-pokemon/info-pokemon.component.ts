@@ -19,12 +19,14 @@ export class InfoPokemonComponent implements OnInit {
         front_default: ''
       },
       types:[]
-    }
+    };
+
 
   }
+
+
   ngOnInit(): void {
     this.getPokemon('bulbasaur')
-
   }
 
   getPokemon(searchName:string){
@@ -40,12 +42,7 @@ export class InfoPokemonComponent implements OnInit {
             sprites: res.sprites,
             types: res.types,
           }
-
-        },
-        error: (err) =>console.log('not found')
-
+        }
       })
-
-
+    }
   }
-}

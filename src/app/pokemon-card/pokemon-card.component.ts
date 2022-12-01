@@ -1,8 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { PokemonData } from 'src/app/models/pokemonData';
+
 import { PokemonService } from "src/app/services/pokemon.service";
 
-import { InfoPokemonComponent } from "src/app/pages/info-pokemon/info-pokemon.component";
 
 @Component({
   selector: 'app-pokemon-card',
@@ -24,15 +23,11 @@ export class PokemonCardComponent{
   pegarImagemPokemon() {
     const numeroFormatado = this.leadingZero(this.numero);
 
-    return `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${numeroFormatado}.png`;
+    return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${numeroFormatado}.png`;
   }
 
-  leadingZero(str: string | number, size = 3): string {
+  leadingZero(str: string | number, ): string {
     let s = String(str);
-
-    while (s.length < (size || 2)) {
-      s = '0' + s;
-    }
 
     return s;
   }
